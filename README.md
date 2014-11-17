@@ -74,8 +74,10 @@ PNG는 완전한 ICC 색상 프로파일만큼 감마 정보와 색도 데이터
 픽셀이 불투명할 수록 배경이 이미지가 표현하는 색상에 의해 감춰집니다.
 0의 알파값은 완전히 투명한 픽셀을 표현하고, 최대치의 알파값은 완전히 불투명한 픽셀을 표현합니다.
 
-#### 3.1.2 alpha compaction
-an implicit representation of transparent pixels. If every pixel with a specific colour or greyscale value is fully transparent and all other pixels are fully opaque, the alpha channel may be represented implicitly.
+#### 3.1.2 알파 압축(alpha compaction)
+투명 픽셀의 암시적인 표현(representation)입니다.
+만약 특정색상이나 그레이스케일(grayscale)을 담는 모든 픽셀의 값이 완전히 투명하고 다른 모든 픽셀이 완전히 불투명하다면,
+알파 채널은 암시적으로 표현됩니다.
 
 #### 3.1.3 alpha separation
 separating an alpha channel in which every pixel is fully opaque; all alpha values are the maximum value. The fact that all pixels are fully opaque is represented implicitly.
