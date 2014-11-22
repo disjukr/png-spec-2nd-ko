@@ -83,8 +83,11 @@ PNG는 완전한 ICC 색상 프로파일만큼 감마 정보와 색도 데이터
 #### 3.1.3 alpha separation
 separating an alpha channel in which every pixel is fully opaque; all alpha values are the maximum value. The fact that all pixels are fully opaque is represented implicitly.
 
-#### 3.1.4 alpha table
-indexed table of alpha sample values, which in an indexed-colour image defines the alpha sample values of the reference image. The alpha table has the same number of entries as the palette.
+#### 3.1.4 알파 테이블(alpha table)
+[참조 이미지](http://www.w3.org/TR/2003/REC-PNG-20031110/#3referenceImage)의
+[알파](http://www.w3.org/TR/2003/REC-PNG-20031110/#3alpha) [샘플](http://www.w3.org/TR/2003/REC-PNG-20031110/#3sample)값을 정의하는
+[indexed-color](http://www.w3.org/TR/2003/REC-PNG-20031110/#3indexedColour) 이미지의 색인 테이블입니다.
+알파 테이블은 [팔레트](http://www.w3.org/TR/2003/REC-PNG-20031110/#3palette)와 같은 수의 내용을 담습니다.
 
 #### 3.1.5 ancillary chunk
 class of chunk that provides additional information. A PNG decoder, without processing an ancillary chunk, can still produce a meaningful image, though not necessarily the best possible image.
